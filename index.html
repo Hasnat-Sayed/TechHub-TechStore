@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechHub</title>
+
+    <!-- tailwind cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- roboto font  -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+      .font-roboto {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="font-roboto">
+    <!-- Navbar -->
+    <nav class="bg-gray-50 text-black sticky top-0 z-20 shadow-xl">
+      <div class="w-11/12 mx-auto">
+        <div class="flex justify-between items-center py-4">
+          <div class="text-2xl font-bold">
+            <h1><i class="fas fa-bolt mr-2 text-indigo-600"></i>TechHub</h1>
+          </div>
+
+          <!-- nav links -->
+          <div class="hidden md:flex space-x-8">
+            <a href="#home" class="hover:text-indigo-600">Home</a>
+            <a href="#products" class="hover:text-indigo-600">Products</a>
+            <a href="#reviews" class="hover:text-indigo-600">Reviews</a>
+            <a href="#contact" class="hover:text-indigo-600">Contact</a>
+          </div>
+
+          <!-- mobile menu btn -->
+          <button id="mobileMenuBtn" class="md:hidden text-2xl">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <section
+      id="home"
+      class="bg-gradient-to-r from-indigo-600 to-purple-600 py-20"
+    >
+      <div class="w-11/12 mx-auto">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <!-- banner contents  -->
+          <div class="md:w-1/2 mb-10 md:mb-0">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">
+              Welcome to the Future of Technology
+            </h1>
+            <p class="text-lg text-gray-800 mb-8">
+              Discover premium gadgets and electronics that transform your
+              digital lifestyle.<br />
+              Quality products at unbeatable prices.
+            </p>
+            <button
+              class="bg-gray-900 text-white px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transform transition duration-400"
+            >
+              Shop Now <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+          </div>
+
+          <!-- banner img  -->
+          <div class="md:w-1/2 flex justify-center">
+            <div class="relative">
+              <div
+                class="w-80 h-80 bg-gradient-to-br from-indigo-400 to-purple-200 rounded-full opacity-20 absolute -bottom-10 -right-20 hidden lg:flex"
+              ></div>
+              <div
+                class="w-40 h-40 bg-gradient-to-br from-indigo-200 to-purple-400 rounded-full opacity-20 absolute -top-10 -left-10 hidden lg:flex "
+              ></div>
+              <img
+                src="./assets/banner.jpg"
+                alt=""
+                class="relative z-10 rounded-2xl w-96"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+  </body>
+</html>
